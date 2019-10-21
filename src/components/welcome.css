@@ -1,0 +1,48 @@
+.portrait{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    
+
+}
+
+.WelcomeBackground{
+    display: flex;
+    flex-direction:column;
+    padding: 10vmin;
+    justify-content: center;
+    align-items: center;
+    background-color: #00acc1;
+    color: white;
+
+}
+
+.AboutMeButton{
+    padding: 20px;
+    width: 20vw;
+    margin: 18px;
+}
+
+.AboutMeButton:hover {
+    background-color: #cddc39 ; 
+    color: white; 
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.Navigation{
+    display: flex;
+    justify-content: center;
+
+}
+
+.Card{
+    width: 320px;
+    height: 390px;
+    margin: 8px;
+}
+.CardTitle{
+    background-color: #b0bec5;
+}
+
+.cardimg{
+    width: 320px;
+}
