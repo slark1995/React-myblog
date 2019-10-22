@@ -1,0 +1,14 @@
+.sidePortrait{
+    width: 120px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.info h2{
+    margin: 3px;
+}
+
+.info p{
+    margin: 8px;
+    color: rgba(0, 0, 0, 0.65);
+}
+

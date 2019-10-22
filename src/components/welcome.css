@@ -2,11 +2,12 @@
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    
+    margin: 12px;
 
 }
 
 .WelcomeBackground{
+    margin-top: 10px;
     display: flex;
     flex-direction:column;
     padding: 10vmin;
@@ -16,11 +17,18 @@
     color: white;
 
 }
+.WelcomeBackground h2{
+    margin: 8px;
+}
 
 .AboutMeButton{
     padding: 20px;
     width: 20vw;
     margin: 18px;
+}
+
+.link{
+    text-decoration: none;
 }
 
 .AboutMeButton:hover {
@@ -31,7 +39,7 @@
 .Navigation{
     display: flex;
     justify-content: center;
-
+    flex-wrap: wrap;
 }
 
 .Card{
