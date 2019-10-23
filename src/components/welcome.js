@@ -30,7 +30,9 @@ class Welcome extends React.Component {
                 </div>
 
                 <div className="Navigation">
+                    <Link to='/posts' className = "link">
                     <NaviCard CardTitle="POSTS" img={postcard} />
+                    </Link>
                     <NaviCard CardTitle="PHOTOS" img={photocard} />
                     <NaviCard CardTitle="DEMOS" img={democard} />
                 </div>

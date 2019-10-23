@@ -16,9 +16,9 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
 import { cyan } from '@material-ui/core/colors';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
 
 class Header extends React.Component {
     render() {
@@ -127,12 +127,17 @@ function PersistentDrawerLeft(props) {
           >
             <MenuIcon />
           </IconButton>
-          <i className="fa fa-rocket" aria-hidden="true"></i>
+          <i className="fa fa-paper-plane fa-lg" aria-hidden="true"></i>
+          <Link to='/' className = "title">
           <Typography variant="h6" noWrap className={classes.title}>
             Taijie's Personal Page
           </Typography>
+          </Link>
         </Toolbar>
       </AppBar>}
+
+      {/* ========================DRAWER=========================== */}
+
       <Drawer
         className={classes.drawer}
         variant="persistent"
@@ -152,25 +157,56 @@ function PersistentDrawerLeft(props) {
                     <img src={sidePortrait} className="sidePortrait" alt="portrait" />
                     <h2>TJ.Yang</h2>
                     <p>Web Dev/shutterbug</p>
-                    <a href = "https://github.com/slark1995" target="_blank"><p><i class="fa fa-github" aria-hidden="true"> Github</i></p></a>
+                    <a href = "https://github.com/slark1995" target="_blank"><p><i className="fa fa-github" aria-hidden="true"> Github</i></p></a>
                 </div>
         <Divider />
+
+
         <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
+          <Link to='/' className = "sideTitle">
+          <ListItem button key = "Home page">
+          <ListItemIcon><i className="fa fa-home fa-lg" aria-hidden="true"></i></ListItemIcon>
+          <ListItemText primary="Home page" />
+          </ListItem>
+          </Link>
+        </List>
+          <Divider />
+          
+        <List>
+          <ListItem button key = "All posts">
+          <ListItemIcon><i className="fa fa-file-code-o fa-lg" aria-hidden="true"></i></ListItemIcon>
+          <ListItemText primary="All posts" />
+          </ListItem>
+
+          <ListItem button key = "Web dev">
+          <ListItemIcon><i className="fa fa-code fa-lg" aria-hidden="true"></i></ListItemIcon>
+          <ListItemText primary="Web dev" />
+          </ListItem>
+
+          <ListItem button key = "Algorighm">
+          <ListItemIcon><i className="fa fa-hashtag fa-lg" aria-hidden="true"></i></ListItemIcon>
+          <ListItemText primary="Algorighm" />
+          </ListItem>
+
+          <ListItem button key = "AI related">
+          <ListItemIcon><i className="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></ListItemIcon>
+          <ListItemText primary="AI related" />
+          </ListItem>
+
         </List>
         <Divider />
         <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
+          <ListItem button key = "Photos">
+          <ListItemIcon><i className="fa fa-camera-retro fa-lg"></i></ListItemIcon>
+          <ListItemText primary="Photos" />
+          </ListItem>
+        </List>
+        <Divider />
+        <List>
+          <ListItem button key = "Demos">
+          <ListItemIcon><i className="fa fa-cubes fa-lg" aria-hidden="true"></i></ListItemIcon>
+          <ListItemText primary="Demos" />
+          </ListItem>
         </List>
       </Drawer>
       <main

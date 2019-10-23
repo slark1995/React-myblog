@@ -1,3 +1,9 @@
+.title{
+    color: white;
+}
+.sideTitle{
+    color: rgba(0, 0, 0, 0.87);
+}
 .sidePortrait{
     width: 120px;
     border-radius: 50%;
@@ -11,4 +17,5 @@
     margin: 8px;
     color: rgba(0, 0, 0, 0.65);
 }
+
 
