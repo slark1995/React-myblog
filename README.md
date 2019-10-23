@@ -2,6 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This is a personal blog project to demonstrate the Apps and track the way I learn new skills and knowledges.
 
+To see the demo, just download the project and ``yarn start``
 
 ### KEY TOOLS
 * ReactJS
