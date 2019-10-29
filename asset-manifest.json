@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/React-myblog/static/css/main.cb936623.chunk.css",
+    "main.js": "/React-myblog/static/js/main.a025aebd.chunk.js",
+    "main.js.map": "/React-myblog/static/js/main.a025aebd.chunk.js.map",
+    "runtime-main.js": "/React-myblog/static/js/runtime-main.40fe5479.js",
+    "runtime-main.js.map": "/React-myblog/static/js/runtime-main.40fe5479.js.map",
+    "static/js/2.f2181278.chunk.js": "/React-myblog/static/js/2.f2181278.chunk.js",
+    "static/js/2.f2181278.chunk.js.map": "/React-myblog/static/js/2.f2181278.chunk.js.map",
+    "index.html": "/React-myblog/index.html",
+    "precache-manifest.352d9341fe4fe26b58863554e30f122e.js": "/React-myblog/precache-manifest.352d9341fe4fe26b58863554e30f122e.js",
+    "service-worker.js": "/React-myblog/service-worker.js",
+    "static/css/main.cb936623.chunk.css.map": "/React-myblog/static/css/main.cb936623.chunk.css.map",
+    "static/media/democard.png": "/React-myblog/static/media/democard.6238802c.png",
+    "static/media/photocard.png": "/React-myblog/static/media/photocard.e2c24fb0.png",
+    "static/media/portrait.JPG": "/React-myblog/static/media/portrait.07f21903.JPG",
+    "static/media/postcard.jpg": "/React-myblog/static/media/postcard.c0d8bde7.jpg",
+    "static/media/sidePortrait.jpg": "/React-myblog/static/media/sidePortrait.d75ee55c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.40fe5479.js",
+    "static/js/2.f2181278.chunk.js",
+    "static/css/main.cb936623.chunk.css",
+    "static/js/main.a025aebd.chunk.js"
+  ]
+}
