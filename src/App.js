@@ -1,26 +1,41 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import Welcome from './components/welcome';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 import AboutMe from './components/aboutMe';
 import Posts from './components/posts';
 
-function App() {
-  return (
-    <div className="App">
-     
+
+class App extends React.Component {
+  
+  constructor(props) {
+    super(props);
+
+
+    this.state = {
+      developers: []
+    };
+  }
+
+
+  render() {
+    return (
+      <div className="App">
+
         <Router >
           <div>
             <Route exact path="/" component={Welcome} />
             <Route path="/about" component={AboutMe} />
             <Route path="/posts" component={Posts} />
             {/* <Route path="/photos" component={Page2} />
-            <Route path="/demos" component={Page3} />  */}
+              <Route path="/demos" component={Page3} />  */}
           </div>
         </Router>
 
-    </div>
-      );
-    }
-    
-    export default App;
+      </div>
+    );
+  }
+}
+
+
+export default App;

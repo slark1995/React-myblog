@@ -17,7 +17,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import { cyan } from '@material-ui/core/colors';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 class Header extends React.Component {
@@ -157,7 +157,7 @@ function PersistentDrawerLeft(props) {
                     <img src={sidePortrait} className="sidePortrait" alt="portrait" />
                     <h2>TJ.Yang</h2>
                     <p>Web Dev/shutterbug</p>
-                    <a href = "https://github.com/slark1995" target="_blank"><p><i className="fa fa-github" aria-hidden="true"> Github</i></p></a>
+                    <a href = "https://github.com/slark1995" target="_blank" rel="noopener noreferrer"><p><i className="fa fa-github" aria-hidden="true"> Github</i></p></a>
                 </div>
         <Divider />
 

@@ -9,7 +9,7 @@ import Paper from '@material-ui/core/Paper';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 class Welcome extends React.Component {
 
     render() {
@@ -67,7 +67,7 @@ class NaviCard extends React.Component {
                     <CardContent className="CardTitle">
                         <h2>{CardTitle}</h2>
                     </CardContent>
-                    <img src={img} className="cardimg" alt="card image" />
+                    <img src={img} className="cardimg" alt="" />
                 </CardActionArea>
             </Card>
 
