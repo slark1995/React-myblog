@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Welcome from './components/welcome';
+import Welcome from './components/welcome.jsx';
 import { HashRouter as Router, Route } from 'react-router-dom';
-import AboutMe from './components/aboutMe';
-import Posts from './components/posts';
+import AboutMe from './components/aboutMe.jsx';
+import Posts from './components/posts.jsx';
 
 
 class App extends React.Component {

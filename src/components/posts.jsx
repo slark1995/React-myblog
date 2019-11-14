@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './header';
 import './post.css';
 import { fetchPostList } from "../lib/api.js";
+import PostList from './postLIst';
 
 export default class Posts extends React.Component{
 
@@ -31,6 +32,7 @@ export default class Posts extends React.Component{
         return(
             <div className="Posts">
                 <Header open={true} />
+                <PostList />
             </div>
         );
     };

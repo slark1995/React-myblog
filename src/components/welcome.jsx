@@ -4,7 +4,7 @@ import postcard from '../assets/pics/postcard.jpg'
 import photocard from '../assets/pics/photocard.png'
 import democard from '../assets/pics/democard.png'
 import './welcome.css';
-import Header from './header';
+import Header from './header.jsx';
 import Paper from '@material-ui/core/Paper';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
