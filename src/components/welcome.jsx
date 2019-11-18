@@ -14,7 +14,7 @@ class Welcome extends React.Component {
 
     render() {
         return (
-            <div className="Welcome">
+            <div className="welcome">
                 <Header open = {false}/>
                 
                 <div className="WelcomeBackground">

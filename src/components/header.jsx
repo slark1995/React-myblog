@@ -134,7 +134,7 @@ function PersistentDrawerLeft(props) {
           </Typography>
           </Link>
         </Toolbar>
-      </AppBar>}
+      </AppBar>
 
       {/* ========================DRAWER=========================== */}
 

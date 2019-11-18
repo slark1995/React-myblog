@@ -1,0 +1,12 @@
+ .posts{
+    display: flex;
+    justify-content:center;
+} 
+
+.postlist{
+    position: relative;
+    min-width: 75vw;
+    margin: 6%;
+    left: -30px;
+}
+

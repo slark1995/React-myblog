@@ -1,8 +1,7 @@
 import React from 'react';
 import Header from './header';
 import './post.css';
-import { fetchPostList } from "../lib/api.js";
-import PostList from './postLIst';
+import PostList from './postList';
 
 export default class Posts extends React.Component{
 
@@ -10,27 +9,17 @@ export default class Posts extends React.Component{
         super(props)
 
         this.state = {
-            posts:[]
+
         }
     }
 
-    componentDidMount() {
-        this.getPosts();
-    }
 
-    getPosts = () => {
-        fetchPostList().then(data => {
-            console.log(data);
-        })
-      }
     
-    
-
     render(){
         //const { developers } = this.state;
         //console.log(this.state)
         return(
-            <div className="Posts">
+            <div className="posts">
                 <Header open={true} />
                 <PostList />
             </div>
