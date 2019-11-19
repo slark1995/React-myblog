@@ -4,6 +4,15 @@ export const fetchPostList = () => {
         .catch(e => console.log(e.message));
 }
 
+
+export const fetchPost = (uuid) => {
+    return fetch(`https://tj-blog-1eff5.firebaseio.com/posts/${uuid}.json`)
+        .then(response => { return response.json(); })
+        .catch(e => console.log(e.message));
+}
+
+
+
 export const fetchPhotos = (id) => {
     return fetch('https://tj-blog-1eff5.firebaseio.com/user.json')
         .then(response => { return response.json(); })

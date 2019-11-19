@@ -8,7 +8,7 @@ export default class PostList extends React.Component{
         super(props)
 
         this.state = {
-            posts:[]
+            posts:[],
         }
     }
     
@@ -18,8 +18,16 @@ export default class PostList extends React.Component{
 
     getPosts = () => {
         fetchPostList().then(data => {
-            //const id = "-Ltvqtd3hWZ6eDCIHuxz";
-            console.log(Object.values(data));
+            let uuids = [];
+            for (let i in data){
+                uuids.push(i);
+            }
+
+            for (let j = 0; j < uuids.length; j++) {  
+                Object.values(data)[j]['uuid'] = uuids[j];
+            }  
+
+            //console.log(Object.values(data));
             let dataArray = Object.values(data)
             this.setState( {posts:dataArray} );
         })
@@ -27,9 +35,8 @@ export default class PostList extends React.Component{
 
     
     render(){
-        console.log(this.state.posts);
-        let postList = this.state.posts.map(i => <PostListItem title = {i.title} excerpt = {i.excerpt} /> );
-        //let postList = <PostListItem title = 'title1' />;
+        //console.log(this.state.posts);
+        let postList = this.state.posts.map(i => <PostListItem key = {i.uuid} uuid = {i.uuid} id ={i.id} title = {i.title} excerpt = {i.excerpt} /> );
         return(
             <div className = "postlist">
                 {postList? postList: null}

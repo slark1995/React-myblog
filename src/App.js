@@ -4,6 +4,7 @@ import Welcome from './components/welcome.jsx';
 import { HashRouter as Router, Route } from 'react-router-dom';
 import AboutMe from './components/aboutMe.jsx';
 import Posts from './components/posts.jsx';
+import PostRead from './components/postRead.jsx'
 
 
 class App extends React.Component {
@@ -25,10 +26,12 @@ class App extends React.Component {
         <Router >
           <div>
             <Route exact path="/" component={Welcome} />
-            <Route path="/about" component={AboutMe} />
-            <Route path="/posts" component={Posts} />
+            <Route exact path="/about" component={AboutMe} />
+            <Route exact path="/posts" component={Posts} />
+            <Route exact path={'/posts/:postId/'} component={PostRead} />
             {/* <Route path="/photos" component={Page2} />
               <Route path="/demos" component={Page3} />  */}
+            
           </div>
         </Router>
 

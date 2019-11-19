@@ -4,8 +4,9 @@
 } 
 
 .postlist{
+    width: 75vw;
+    max-width: 850px;
     position: relative;
-    min-width: 75vw;
     margin: 6%;
     left: -30px;
 }

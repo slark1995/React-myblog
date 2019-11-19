@@ -12,7 +12,14 @@ export default class PostListItem extends React.Component{
     render(){
         const title = this.props.title;
         const excerpt = this.props.excerpt;
-        //const content = this.props.content;
+        const uuid = this.props.uuid;
+        const id = this.props.id;
+
+        const path = {
+          pathname: `/posts/${id}/`,
+          query:uuid,
+        }
+        
 
         //let htmlOutput = MarkdownParser.render(content);
         // const renderResult = {
@@ -21,7 +28,7 @@ export default class PostListItem extends React.Component{
         return(
             <div className = "itemwrapper">
                 <h2 className = "postTitle">
-                    <Link className = "link" to = '/posts/1'>{title}</Link>
+                    <Link className = "link" to = {path}>{title}</Link>
                 </h2>
                 <p className= "excerpt">
             {
@@ -30,7 +37,7 @@ export default class PostListItem extends React.Component{
                   <span>
                     {excerpt.slice(0, 300) + ' ... '}
                     <span >
-                      <Link to=''>
+                      <Link className = "readMore" to = {path}>
                         Read More
                       </Link>
                     </span>
@@ -39,7 +46,7 @@ export default class PostListItem extends React.Component{
                   <span>
                     {excerpt + ' '} &nbsp;
                     <span >
-                      <Link to=''>
+                      <Link className = "readMore" to={path}>
                         Read More
                       </Link>
                     </span>

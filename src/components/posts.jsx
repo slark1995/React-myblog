@@ -5,15 +5,6 @@ import PostList from './postList';
 
 export default class Posts extends React.Component{
 
-    constructor(props){
-        super(props)
-
-        this.state = {
-
-        }
-    }
-
-
     
     render(){
         //const { developers } = this.state;

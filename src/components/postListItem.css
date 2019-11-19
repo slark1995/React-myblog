@@ -26,11 +26,17 @@
   color: black;
 }
 .excerpt{
+  color: rgba(0,0,0,.70);
   margin: 0;
   overflow: hidden;
   font-family: 'medium-content-serif-font', serif;
   font-weight: 600;
   text-overflow: ellipsis;
-  flex: 1;
   margin: 4px 0 8px;
+}
+
+.readMore{
+  color: salmon;
+  text-decoration: underline;
+  font-weight: bold;
 }
