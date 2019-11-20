@@ -4,6 +4,8 @@ This is a personal blog project to demonstrate the Apps and track the way I lear
 
 To see the demo, just download the project and ``yarn start``
 
+___
+
 ### KEY TOOLS
 * ReactJS
 * HTML
@@ -14,6 +16,7 @@ To see the demo, just download the project and ``yarn start``
 * REST API
 * NoSQL
 
+___
 
 - [X] Build main page.
 - [X] About me page.
