@@ -1,26 +1,29 @@
 {
   "files": {
-    "main.css": "/React-myblog/static/css/main.ca2bb3c5.chunk.css",
-    "main.js": "/React-myblog/static/js/main.0c8d6e8f.chunk.js",
-    "main.js.map": "/React-myblog/static/js/main.0c8d6e8f.chunk.js.map",
+    "main.css": "/React-myblog/static/css/main.262512b9.chunk.css",
+    "main.js": "/React-myblog/static/js/main.556498af.chunk.js",
+    "main.js.map": "/React-myblog/static/js/main.556498af.chunk.js.map",
     "runtime-main.js": "/React-myblog/static/js/runtime-main.40fe5479.js",
     "runtime-main.js.map": "/React-myblog/static/js/runtime-main.40fe5479.js.map",
-    "static/js/2.2a50d821.chunk.js": "/React-myblog/static/js/2.2a50d821.chunk.js",
-    "static/js/2.2a50d821.chunk.js.map": "/React-myblog/static/js/2.2a50d821.chunk.js.map",
+    "static/css/2.1c7ffa40.chunk.css": "/React-myblog/static/css/2.1c7ffa40.chunk.css",
+    "static/js/2.4d2468d0.chunk.js": "/React-myblog/static/js/2.4d2468d0.chunk.js",
+    "static/js/2.4d2468d0.chunk.js.map": "/React-myblog/static/js/2.4d2468d0.chunk.js.map",
     "index.html": "/React-myblog/index.html",
-    "precache-manifest.e5b8969867a0197f86f6c3f85129e791.js": "/React-myblog/precache-manifest.e5b8969867a0197f86f6c3f85129e791.js",
+    "precache-manifest.9c31fbfe3c7e9ca3c45ef15ac40c45ee.js": "/React-myblog/precache-manifest.9c31fbfe3c7e9ca3c45ef15ac40c45ee.js",
     "service-worker.js": "/React-myblog/service-worker.js",
-    "static/css/main.ca2bb3c5.chunk.css.map": "/React-myblog/static/css/main.ca2bb3c5.chunk.css.map",
+    "static/css/2.1c7ffa40.chunk.css.map": "/React-myblog/static/css/2.1c7ffa40.chunk.css.map",
+    "static/css/main.262512b9.chunk.css.map": "/React-myblog/static/css/main.262512b9.chunk.css.map",
     "static/media/democard.png": "/React-myblog/static/media/democard.6238802c.png",
     "static/media/photocard.png": "/React-myblog/static/media/photocard.e2c24fb0.png",
-    "static/media/portrait.JPG": "/React-myblog/static/media/portrait.07f21903.JPG",
+    "static/media/portrait.JPG": "/React-myblog/static/media/portrait.3398e624.JPG",
     "static/media/postcard.jpg": "/React-myblog/static/media/postcard.c0d8bde7.jpg",
     "static/media/sidePortrait.jpg": "/React-myblog/static/media/sidePortrait.d75ee55c.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.40fe5479.js",
-    "static/js/2.2a50d821.chunk.js",
-    "static/css/main.ca2bb3c5.chunk.css",
-    "static/js/main.0c8d6e8f.chunk.js"
+    "static/css/2.1c7ffa40.chunk.css",
+    "static/js/2.4d2468d0.chunk.js",
+    "static/css/main.262512b9.chunk.css",
+    "static/js/main.556498af.chunk.js"
   ]
 }
