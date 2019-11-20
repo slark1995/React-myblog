@@ -2,10 +2,35 @@
     display: flex;
     justify-content: center;
 }
+.readPage{
+    display: flex;
+    flex-direction: column;
+}
+.title_read{
+    font-family: Lora,serif;
+    text-align: left;
+    margin-top: 100px;
+}
+.excerpt_read{
+    margin-top: 10px;
+    padding :10px;
+    border-radius: 10px;
+    border:3px solid rgba(0, 0, 0, 0.3);
+    max-width: 60vw;
+    font-family: "medium-content-serif-font",serif;
+    font-size: 18px;
+    letter-spacing: .02em;
+    margin-bottom: 30px;
+}
 
 
 .text{
     text-align: left;
-    margin: 6%;
-
+    max-width: 60vw;
+    font-size: 20px;
 }
+
+.emoji{
+    height: 1.2em;
+}
+

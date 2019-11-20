@@ -4,7 +4,7 @@ import { fetchPost } from "../lib/api.js";
 import ReactMarkdown from "react-markdown";
 import MarkdownParser from "../lib/markdown-parser";
 import "./postRead.css"
-
+import 'github-markdown-css'
 export default class PostRead extends React.Component{
     constructor(props){
         super(props)
@@ -19,24 +19,23 @@ export default class PostRead extends React.Component{
     }
 
     getPosts = () => {
-        let id = "-Lu-c38V8wTeCkOwJxSM";
-        console.log(id);
-        fetchPost(id).then(data => {
+        let uuid = this.props.match.params.postId
+        fetchPost(uuid).then(data => {
             this.setState( {post:data} );
-            console.log(this.state.post);
-            console.log(this.state.post.content);
         })
       }
 
     render(){
-        
-        if(this.state.post === undefined){
+
+        if(this.state.post === undefined ){
             return;
         }
 
         // 这里加上 ”“ 是把content 从 markdown 转换为 string,
         //因为下面MarkdownParser.render后面只能加string
+        const excerpt = this.state.post.excerpt;
         const content = (this.state.post.content) + "";
+        const title = this.state.post.title;
         let htmlOutput = MarkdownParser.render(content);
         const renderResult = {
              __html: htmlOutput
@@ -45,8 +44,12 @@ export default class PostRead extends React.Component{
         return(
             <div className = 'postRead'>
                 <Header open={true} />
-                <div className = "text">
-                    <div dangerouslySetInnerHTML={renderResult} ></div>
+                <div className = "readPage">
+                    <h1 className = "title_read"> {title} </h1>
+                    <div className = "excerpt_read"> { excerpt } </div>
+                    <div className = "markdown-body">
+                        <div className = "text" dangerouslySetInnerHTML={renderResult} ></div>
+                    </div>
                 </div>
                 {/* <ReactMarkdown source={content}/> */}
 

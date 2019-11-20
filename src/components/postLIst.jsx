@@ -22,7 +22,6 @@ export default class PostList extends React.Component{
             for (let i in data){
                 uuids.push(i);
             }
-
             for (let j = 0; j < uuids.length; j++) {  
                 Object.values(data)[j]['uuid'] = uuids[j];
             }  

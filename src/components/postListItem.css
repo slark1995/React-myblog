@@ -27,12 +27,11 @@
 }
 .excerpt{
   color: rgba(0,0,0,.70);
-  margin: 0;
   overflow: hidden;
   font-family: 'medium-content-serif-font', serif;
   font-weight: 600;
   text-overflow: ellipsis;
-  margin: 4px 0 8px;
+  margin-top: 0;
 }
 
 .readMore{
