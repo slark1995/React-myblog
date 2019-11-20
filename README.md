@@ -13,3 +13,14 @@ To see the demo, just download the project and ``yarn start``
 * Firebase
 * REST API
 * NoSQL
+
+
+- [X] Build main page.
+- [X] About me page.
+- [X] router between pages
+- [X] have a article editor can post to firebase database (will not push to github for security)
+- [X] can fetch data from firebase 
+- [X] postlist
+- [X] readpage with markdown
+- [ ] post date
+- [ ] photos page
