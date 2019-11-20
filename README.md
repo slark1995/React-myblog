@@ -24,3 +24,4 @@ To see the demo, just download the project and ``yarn start``
 - [X] readpage with markdown
 - [ ] post date
 - [ ] photos page
+- [ ] category by tags
